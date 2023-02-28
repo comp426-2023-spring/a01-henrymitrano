@@ -18,12 +18,12 @@ const port = args.port || 3000;
 // If there is an error, put it on the console error and return. 
 // Do not be nice about exiting.
 fs.readFile('./public/index.html', 'utf-8', (err, data) => {
-			if(err){console.error(err);
-			return;
-		}
-		console.log(data);
+			if(err){
+				console.error(err);
+				return;
+			}
 	}
-);
+
 
 
 
@@ -39,7 +39,7 @@ const server = http.createServer((req, res) => {
 		res.setHeader('Content-Type', 'text/html');
 		res.end(data);
 	}
-);
+)
 
 
 
@@ -50,8 +50,8 @@ const server = http.createServer((req, res) => {
 
 server.listen(port, () => {
 	console.log('Server listening on port ' + port); 
-	}
-);
+	})
+});
 
 
 // That's it! You're all done!
