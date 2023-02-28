@@ -22,7 +22,7 @@ fs.readFile('./public/index.html', 'utf-8', (err, data) => {
 				console.error(err);
 				return;
 			}
-	}
+
 
 
 
